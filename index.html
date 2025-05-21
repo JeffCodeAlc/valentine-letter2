@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love letter for Pearl - Valentine's Day</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container" id="question">
+        <h1>Happy Valentine's Day Pearl!</h1>
+        
+        <!-- New GIF below the title -->
+        <div class="gif-container">
+            <div class="tenor-gif-embed" data-postid="1926802144509925721" data-share-method="host" data-aspect-ratio="1.30952" data-width="100%"></div>
+        </div>
+        
+        <p>Would you like to receive my letter?</p>
+        <div class="buttons">
+            <button id="yesBtn">Yes, please!</button>
+            <button id="noBtn">Not now...</button>
+        </div>
+    </div>
+
+    <div class="container hidden" id="cardContainer">
+        <div id="card" class="card" onclick="openCard()">
+            <div class="card-front">
+                <div class="heart">❤️</div>
+                <h2>For Pearl</h2>
+                <p>Click to open</p>
+            </div>
+            <div class="card-back">
+                <h3>Dear Pearl,</h3>
+                
+                <div class="letter-content">
+                    <p>Today is Valentine's Day in China, and although it's been some time since we last spoke, I wanted to write you some words from the heart.</p>
+                    
+                    <p>Despite the distance between us, I want you to know that I keep you in my thoughts and wish you a very beautiful day. You are a very special person, with a beauty that shows not only in your eyes, but also in your sweet way of being.</p>
+                    
+                    <p>I don't know how your life has been these past months, but I sincerely hope you're doing well, that you're smiling and surrounded by peace. I'd like you to know that here, many kilometers away, there's someone who thinks of you with appreciation and wishes you the best.</p>
+                    
+                    <p>You don't need to have a partner to enjoy this day. Love is also celebrated in friendship, and as a friend, I want to wish you a very happy Valentine's Day. Please take good care of yourself. I always wish you health, happiness, and beautiful moments.</p>
+                    
+                    <p>Sending you a big hug from afar, with all the affection of a friend who cares about you very much.</p>
+                </div>
+                
+                <div class="signature">With affection, Jefferson</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container hidden" id="sadMessage">
+        <div class="broken-heart">💔</div>
+        <h2>The letter has closed...</h2>
+        
+        <!-- Panda bear GIF when saying "Not now" -->
+        <div class="gif-container">
+            <div class="tenor-gif-embed" data-postid="18519830" data-share-method="host" data-aspect-ratio="1" data-width="100%"></div>
+        </div>
+        
+        <p>But I'll always be here if you change your mind.</p>
+        <button onclick="resetCard()">Try again</button>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+</html>    
